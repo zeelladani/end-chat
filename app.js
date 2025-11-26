@@ -3,24 +3,23 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase
 import { getFirestore, collection, doc, setDoc, addDoc, getDoc, getDocs, onSnapshot, updateDoc, deleteDoc, serverTimestamp, query, where, orderBy } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
 import { getMessaging, getToken, onMessage } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-messaging.js";
 
-// Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyDowlFEOyZO4nsExRpXdYAyyV2JDPOM6c8",
-    authDomain: "endchat-650c5.firebaseapp.com",
-    projectId: "endchat-650c5",
-    storageBucket: "endchat-650c5.firebasestorage.app",
-    messagingSenderId: "394874486211",
-    appId: "1:394874486211:web:d89dbf90ee1590024cd176",
-    measurementId: "G-YK2GED676D"
+  apiKey: "AIzaSyAv8sLro0XRpTNLwOgqcUVPIGpiv5Extts",
+  authDomain: "shadowchat-ffbd0.firebaseapp.com",
+  projectId: "shadowchat-ffbd0",
+  storageBucket: "shadowchat-ffbd0.firebasestorage.app",
+  messagingSenderId: "912440519677",
+  appId: "1:912440519677:web:3faa4355da07651337c794",
+  measurementId: "G-NK7LVB0KDN"
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 let messaging = null;
 
 // Vapid key for web push
-const vapidKey = "BOGPu82R8JszMpLjN96sfTaXAP5cNe4CK4yFITh_JYAbwJKKzH5RoKHJM7QpNjqaHnKVavT1LvyJWTm24hDsrzY";
+const vapidKey = "BEGnjIBE1xF4qORw0xpXJgL6ZyQaSI4jmIMOBTfB2deq48JqZJlUyTR3zo-f9A0vjWXN_MpY1dJE-g--dQ3vDl8";
 
 // DOM Elements
 const loadingOverlay = document.getElementById('loading-overlay');
