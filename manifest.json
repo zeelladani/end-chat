@@ -1,0 +1,25 @@
+{
+  "name": "EndChat",
+  "short_name": "EndChat",
+  "description": "Secure, temporary end-to-end encrypted chat app",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "App-Icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "App-Icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "gcm_sender_id": "394874486211"
+}
